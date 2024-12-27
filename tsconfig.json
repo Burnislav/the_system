@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "CommonJS",
+      "strict": true,
+      "jsx": "react",
+      "outDir": "dist",
+      "rootDir": "src",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["node_modules"]
+  }

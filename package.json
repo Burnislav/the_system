@@ -1,0 +1,31 @@
+{
+  "name": "electron-react-ts-app",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "npm run build:main && npm run build:renderer",
+    "build:main": "webpack --config webpack.main.config.js",
+    "build:renderer": "webpack --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development concurrently \"webpack serve\" \"electron .\"",
+    "browser-dev": "cross-env NODE_ENV=development webpack serve"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "concurrently": "latest",
+    "cross-env": "latest",
+    "electron": "latest",
+    "electron-builder": "latest",
+    "html-webpack-plugin": "latest",
+    "ts-loader": "latest",
+    "typescript": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
